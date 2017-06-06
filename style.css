@@ -1,3 +1,6 @@
+.container-fluid{
+    min-width: 1000px;
+}
 body {
     width: 100%;
     margin: 0;
@@ -8,12 +11,14 @@ body {
 }
 .header {
     background: url(image/rating.png) no-repeat;
+    background-size: cover;
     position: relative;
     width: 1358px;
     height: 415px;
     margin: auto;
     text-align: center;
 }
+
 .header_menu {
     width: 100%;
     max-width: 1358px;
@@ -326,4 +331,8 @@ input[type=radio] {
 .button:focus {
     outline: none;
     color: #c2d0e1;
+}
+.wrap {
+    width: 100%;
+    max-width: 830px;
 }
