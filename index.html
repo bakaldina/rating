@@ -575,17 +575,25 @@
 			$button1.addEventListener('click', function(e){
 			$container1.style.display = 'block';
 			$container2.style.display = 'none';
+			$container3.style.display = 'none';
+			$container4.style.display = 'none';
 			});
 		
 			$button2.addEventListener('click', function(e){
 			$container1.style.display ='none';
+			$container3.style.display = 'none';
+			$container4.style.display = 'none';
 			$container2.style.display ='block';
 			});
 			$button3.addEventListener('click', function(e){
-			$container2.style.display ='none';
+			$container1.style.display ='none';
+			$container2.style.display = 'none';
+			$container4.style.display ='none';
 			$container3.style.display ='block';
 			});
 			$button4.addEventListener('click', function(e){
+			$container1.style.display ='none';
+			$container2.style.display = 'none';
 			$container3.style.display ='none';
 			$container4.style.display ='block';
 			});
