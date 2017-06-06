@@ -35,6 +35,7 @@
 						<a href="/Account/Login">войти</a>
 					</li>
 				</ul>
+				<img src="image/rating.png" alt="">
 			</div>
 		</div>
 
@@ -93,433 +94,436 @@
 				<p>Информационные возможности Недра-Эксперт позволяют вести автоматизированное и полуавтоматизированное наблюдение за пользователями недр в части получения ими лицензий, прекращения прав пользования недрам, начала и проведения работ по геологическому изучению и разведки, отработки месторождений и многим другим показателям активности и результатов. В основном при проведении мониторинга компаний применяется дистанционный метод наблюдения.
 				Недра-Эксперт оценивает актив (участок недр) компании и эффективность работы компании с данным активом, а также риски потери актива в случае нарушений условий лицензий.</p>
 			</div>
-			<table class="rating">
-				<tbody class="rating-body">
-					<tr class="rating-item">
-						<th class="rating-cell rating-cell_left">Рейтинг</th>
-						<td class="rating-cell rating-cell_right">
-							<p class="rating-title">Описание состояния предприятия согласно методологии «Недра-эксперт»</p>
-						</td>
-					</tr>
-					<tr class="rating-item">
-						<th class="rating-cell rating-cell_left rating-cell-choose" colspan="2" onclick="showModal()">Выбрать рейтинг <img class="rating-choose" src="image/icon.png" alt=""></th>
-					</tr>
-				</tbody>
-			</table>
-			
-			<table class="rating rating-tab" id="tab1">
+			<div class="tableall-wrap">
+				<table class="rating">
+					<tbody class="rating-body">
+						<tr class="rating-item">
+							<th class="rating-cell rating-cell_left" width="35%">Рейтинг</th>
+							<td class="rating-cell rating-cell_right">
+								<p class="rating-title">Описание состояния предприятия согласно методологии «Недра-эксперт»</p>
+							</td>
+						</tr>
+						<tr class="rating-item">
+							<th class="rating-cell rating-cell_left rating-cell-choose" colspan="2" onclick="showModal()">Выбрать рейтинг <img class="rating-choose" src="image/icon.png" alt=""></th>
+						</tr>
+					</tbody>
+				</table>
+				
+				<table class="rating rating-tab" id="tab1">
+						<thead class="rating-body">
+							<tr class="rating-item" id="title">
+								<td class="rating-cell_select">
+									<a href="#a-row1"><div class="rating-cell_select__item">ААА</div></a>
+								</td>
+								<td class="rating-cell_select">
+									<a href="#a-row2"><div class="rating-cell_select__item">АА+</div></a>
+								</td>
+								<td class="rating-cell_select">
+									<a href="#a-row3"><div class="rating-cell_select__item">АА</div></a>
+								</td>
+								<td class="rating-cell_select">
+									<a href="#a-row4"><div class="rating-cell_select__item">АА-</div></a>
+								</td>
+								<td class="rating-cell_select">
+									<a href="#a-row5"><div class="rating-cell_select__item">А+</div></a>
+								</td>
+								<td class="rating-cell_select">
+									<a href="#a-row6"><div class="rating-cell_select__item">А</div></a>
+								</td>
+								<td class="rating-cell_select">
+									<a href="#a-row7"><div class="rating-cell_select__item">А-</div></a>
+								</td>
+								<td class="rating-cell_select rating-cell_select__item__last" colspan="3">
+									<a href="#a-seeall"><div class="rating-cell_select__item rating-cell_select__item__last">Показать все</div>
+								</td>
+							</tr>
+						</thead>
+						<tbody class="rating-body" id="a-seeall">
+						<tr class="rating-pitem" id="a-row1">
+							<th class="rating-cell rating-cell_left__info">ААА</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Исключительно высокий (наивысший) уровень геоэкономической эффективности и надежности.</p>
+								<p class="rating-info">Предприятие функционирует<br>
+									-	ведется освоение месторождения, <br>
+									-	очень высокий уровень эконом. эффективности обеспечивающий поддержание кредитоспособности даже при условии появления рисков <br>
+									-	геологических, <br>
+									-	ценовых,<br>
+									-	общеэкономических. <br>
+									-	стабильная сырьевая база.  <br>
+									-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений низкие.<br>
+								</p>
+							</td>
+						</tr>
+						<tr class="rating-pitem" id="a-row2">
+							<th class="rating-cell rating-cell_left__info">АА+</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Очень высокий уровень геоэкономической эффективности и надежности с положительными тенденциями.</p>
+								<p class="rating-info">Предприятие функционирует<br>
+									-	ведется освоение месторождения (-ий), <br>
+									-	очень высокий уровень эконом. эффективности обеспечивающий поддержание кредитоспособности даже при условии появления рисков <br>
+									-	геологических, <br>
+									-	ценовых,<br>
+									-	но не общеэкономических. <br>
+									-	стабильная сырьевая база.  <br>
+									-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений низкие.<br>
+								</p>
+							</td>
+						</tr>
+						<tr class="rating-pitem" id="a-row3">
+							<th class="rating-cell rating-cell_left__info">АА</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Очень высокий уровень геоэкономической эффективности и надежности.</p>
+								<p class="rating-info">Предприятие функционирует, имеет стабильную сырьевую базы и его эффективности достаточно для поддержания кредитоспособности даже при условии появления <br>
+									-	ведется освоение месторождения (-ий), <br>
+									-	очень высокий уровень эконом. эффективности обеспечивающий поддержание кредитоспособности даже при условии появления рисков <br>
+									-	геологических, <br>
+									-	ценовых,<br>
+									-	но не общеэкономических. <br>
+									-	риски, которые заложены в инвестирование по разведке и разработке новых месторождений не могут быть оценены как несущественные.<br>
+								</p>
+							</td>
+						</tr>
+						<tr class="rating-pitem" id="a-row4">
+							<th class="rating-cell rating-cell_left__info">АА-</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Высокий уровень геоэкономической эффективности и надежности, с отрицательными тенденциями.</p>
+								<p class="rating-info">Предприятие функционирует <br>
+									-	ведется освоение месторождения, <br>
+									-	очень высокий уровень эконом. эффективности обеспечивающий поддержание кредитоспособности даже при условии появления рисков <br>
+									-	геологических, <br>
+									-	но не ценовых,<br>
+									-	но не общеэкономических. <br>
+									-	стабильная сырьевая база. <br>
+									-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений умеренные.<br>
+								</p>
+							</td>
+						</tr>
+						<tr class="rating-pitem" id="a-row5">
+							<th class="rating-cell rating-cell_left__info">А+</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Высокий уровень геоэкономической эффективности и надежности с положительными тенденциями.</p>
+								<p class="rating-info">Предприятие функционирует <br>
+									-	ведется освоение месторождения, <br>
+									-	очень высокий уровень эконом. эффективности обеспечивающий поддержание кредитоспособности даже при условии появления рисков <br>
+									-	но не геологических, <br>
+									-	но не ценовых,<br>
+									-	но не общеэкономических. <br>
+									-	не достаточно стабильная сырьевая база (запасы сокращаются, срок отработки запасов достаточно близок). <br>
+									-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений умеренные.<br>
+								</p>
+							</td>
+						</tr>
+						<tr class="rating-pitem" id="a-row6">
+							<th class="rating-cell rating-cell_left__info">А</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Высокий уровень геоэкономической эффективности и надежности.</p>
+								<p class="rating-info">Предприятие функционирует <br>
+									-	ведется освоение месторождения, <br>
+									-	высокий уровень эконом. эффективности для поддержания кредитоспособности даже при условии появления рисков <br>
+									-	но не геологических, <br>
+									-	но не ценовых,<br>
+									-	но не общеэкономических. <br>
+									-	не достаточно стабильная сырьевая база (запасы сокращаются, срок отработки запасов достаточно близок). <br>
+									-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений существенные.<br>
+								</p>
+							</td>
+						</tr>
+						<tr class="rating-pitem" id="a-row7">
+							<th class="rating-cell rating-cell_left__info">А-</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Высокий уровень геоэкономической эффективности и надежности, с отрицательными тенденциями.</p>
+								<p class="rating-info">Предприятие функционирует <br>
+									-	ведется освоение месторождения, <br>
+									-	достаточный уровень эконом. эффективности для поддержания кредитоспособности даже при условии появления рисков <br>
+									-	но не геологических, <br>
+									-	но не ценовых,<br>
+									-	но не общеэкономических. <br>
+									-	не достаточно стабильная сырьевая база (запасы сокращаются, срок отработки запасов достаточно близок). <br>
+									-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений существенные.<br>
+								</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="rating rating-tab" id="tab2">
 					<thead class="rating-body">
 						<tr class="rating-item" id="title">
 							<td class="rating-cell_select">
-								<a href="#a-row1"><div class="rating-cell_select__item">ААА</div></a>
+								<a href="#b-row1"><div class="rating-cell_select__item">BBB+</div></a>
 							</td>
 							<td class="rating-cell_select">
-								<a href="#a-row2"><div class="rating-cell_select__item">АА+</div></a>
+								<a href="#b-row2"><div class="rating-cell_select__item">BBB</div></a>
 							</td>
 							<td class="rating-cell_select">
-								<a href="#a-row3"><div class="rating-cell_select__item">АА</div></a>
+								<a href="#b-row3"><div class="rating-cell_select__item">BBB-</div></a>
 							</td>
 							<td class="rating-cell_select">
-								<a href="#a-row4"><div class="rating-cell_select__item">АА-</div></a>
+								<a href="#b-row4"><div class="rating-cell_select__item">BB+</div></a>
 							</td>
 							<td class="rating-cell_select">
-								<a href="#a-row5"><div class="rating-cell_select__item">А+</div></a>
+								<a href="#b-row5"><div class="rating-cell_select__item">BB</div></a>
 							</td>
 							<td class="rating-cell_select">
-								<a href="#a-row6"><div class="rating-cell_select__item">А</div></a>
+								<a href="#b-row6"><div class="rating-cell_select__item">BB-</div></a>
 							</td>
 							<td class="rating-cell_select">
-								<a href="#a-row7"><div class="rating-cell_select__item">А-</div></a>
+								<a href="#b-row7"><div class="rating-cell_select__item">B+</div></a>
 							</td>
-							<td class="rating-cell_select rating-cell_select__item__last" colspan="3">
-								<a href="#a-seeall"><div class="rating-cell_select__item rating-cell_select__item__last">Показать все</div>
+							<td class="rating-cell_select">
+								<a href="#row8"><div class="rating-cell_select__item">B</div></a>
+							</td>
+							<td class="rating-cell_select">
+								<a href="#b-row9"><div class="rating-cell_select__item">B-</div></a>
+							</td>
+							<td class="rating-cell_select rating-cell_select__item__last">
+								<a href="#b-seeall"><div class="rating-cell_select__item rating-cell_select__item__last">Показать все</div>
 							</td>
 						</tr>
 					</thead>
-					<tbody class="rating-body" id="a-seeall">
-					<tr class="rating-pitem" id="a-row1">
-						<th class="rating-cell rating-cell_left__info">ААА</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Исключительно высокий (наивысший) уровень геоэкономической эффективности и надежности.</p>
-							<p class="rating-info">Предприятие функционирует<br>
-								-	ведется освоение месторождения, <br>
-								-	очень высокий уровень эконом. эффективности обеспечивающий поддержание кредитоспособности даже при условии появления рисков <br>
-								-	геологических, <br>
-								-	ценовых,<br>
-								-	общеэкономических. <br>
-								-	стабильная сырьевая база.  <br>
-								-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений низкие.<br>
-							</p>
-						</td>
-					</tr>
-					<tr class="rating-pitem" id="a-row2">
-						<th class="rating-cell rating-cell_left__info">АА+</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Очень высокий уровень геоэкономической эффективности и надежности с положительными тенденциями.</p>
-							<p class="rating-info">Предприятие функционирует<br>
-								-	ведется освоение месторождения (-ий), <br>
-								-	очень высокий уровень эконом. эффективности обеспечивающий поддержание кредитоспособности даже при условии появления рисков <br>
-								-	геологических, <br>
-								-	ценовых,<br>
-								-	но не общеэкономических. <br>
-								-	стабильная сырьевая база.  <br>
-								-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений низкие.<br>
-							</p>
-						</td>
-					</tr>
-					<tr class="rating-pitem" id="a-row3">
-						<th class="rating-cell rating-cell_left__info">АА</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Очень высокий уровень геоэкономической эффективности и надежности.</p>
-							<p class="rating-info">Предприятие функционирует, имеет стабильную сырьевую базы и его эффективности достаточно для поддержания кредитоспособности даже при условии появления <br>
-								-	ведется освоение месторождения (-ий), <br>
-								-	очень высокий уровень эконом. эффективности обеспечивающий поддержание кредитоспособности даже при условии появления рисков <br>
-								-	геологических, <br>
-								-	ценовых,<br>
-								-	но не общеэкономических. <br>
-								-	риски, которые заложены в инвестирование по разведке и разработке новых месторождений не могут быть оценены как несущественные.<br>
-							</p>
-						</td>
-					</tr>
-					<tr class="rating-pitem" id="a-row4">
-						<th class="rating-cell rating-cell_left__info">АА-</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Высокий уровень геоэкономической эффективности и надежности, с отрицательными тенденциями.</p>
-							<p class="rating-info">Предприятие функционирует <br>
-								-	ведется освоение месторождения, <br>
-								-	очень высокий уровень эконом. эффективности обеспечивающий поддержание кредитоспособности даже при условии появления рисков <br>
-								-	геологических, <br>
-								-	но не ценовых,<br>
-								-	но не общеэкономических. <br>
-								-	стабильная сырьевая база. <br>
-								-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений умеренные.<br>
-							</p>
-						</td>
-					</tr>
-					<tr class="rating-pitem" id="a-row5">
-						<th class="rating-cell rating-cell_left__info">А+</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Высокий уровень геоэкономической эффективности и надежности с положительными тенденциями.</p>
-							<p class="rating-info">Предприятие функционирует <br>
-								-	ведется освоение месторождения, <br>
-								-	очень высокий уровень эконом. эффективности обеспечивающий поддержание кредитоспособности даже при условии появления рисков <br>
-								-	но не геологических, <br>
-								-	но не ценовых,<br>
-								-	но не общеэкономических. <br>
-								-	не достаточно стабильная сырьевая база (запасы сокращаются, срок отработки запасов достаточно близок). <br>
-								-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений умеренные.<br>
-							</p>
-						</td>
-					</tr>
-					<tr class="rating-pitem" id="a-row6">
-						<th class="rating-cell rating-cell_left__info">А</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Высокий уровень геоэкономической эффективности и надежности.</p>
-							<p class="rating-info">Предприятие функционирует <br>
-								-	ведется освоение месторождения, <br>
-								-	высокий уровень эконом. эффективности для поддержания кредитоспособности даже при условии появления рисков <br>
-								-	но не геологических, <br>
-								-	но не ценовых,<br>
-								-	но не общеэкономических. <br>
-								-	не достаточно стабильная сырьевая база (запасы сокращаются, срок отработки запасов достаточно близок). <br>
-								-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений существенные.<br>
-							</p>
-						</td>
-					</tr>
-					<tr class="rating-pitem" id="a-row7">
-						<th class="rating-cell rating-cell_left__info">А-</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Высокий уровень геоэкономической эффективности и надежности, с отрицательными тенденциями.</p>
-							<p class="rating-info">Предприятие функционирует <br>
-								-	ведется освоение месторождения, <br>
-								-	достаточный уровень эконом. эффективности для поддержания кредитоспособности даже при условии появления рисков <br>
-								-	но не геологических, <br>
-								-	но не ценовых,<br>
-								-	но не общеэкономических. <br>
-								-	не достаточно стабильная сырьевая база (запасы сокращаются, срок отработки запасов достаточно близок). <br>
-								-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений существенные.<br>
-							</p>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-
-			<table class="rating rating-tab" id="tab2">
-				<thead class="rating-body">
-					<tr class="rating-item" id="title">
-						<td class="rating-cell_select">
-							<a href="#b-row1"><div class="rating-cell_select__item">BBB+</div></a>
-						</td>
-						<td class="rating-cell_select">
-							<a href="#b-row2"><div class="rating-cell_select__item">BBB</div></a>
-						</td>
-						<td class="rating-cell_select">
-							<a href="#b-row3"><div class="rating-cell_select__item">BBB-</div></a>
-						</td>
-						<td class="rating-cell_select">
-							<a href="#b-row4"><div class="rating-cell_select__item">BB+</div></a>
-						</td>
-						<td class="rating-cell_select">
-							<a href="#b-row5"><div class="rating-cell_select__item">BB</div></a>
-						</td>
-						<td class="rating-cell_select">
-							<a href="#b-row6"><div class="rating-cell_select__item">BB-</div></a>
-						</td>
-						<td class="rating-cell_select">
-							<a href="#b-row7"><div class="rating-cell_select__item">B+</div></a>
-						</td>
-						<td class="rating-cell_select">
-							<a href="#row8"><div class="rating-cell_select__item">B</div></a>
-						</td>
-						<td class="rating-cell_select">
-							<a href="#b-row9"><div class="rating-cell_select__item">B-</div></a>
-						</td>
-						<td class="rating-cell_select rating-cell_select__item__last">
-							<a href="#b-seeall"><div class="rating-cell_select__item rating-cell_select__item__last">Показать все</div>
-						</td>
-					</tr>
-				</thead>
-				<tbody class="rating-body" id="b-seeall">
-					<tr class="rating-pitem" id="b-row1">
-						<th class="rating-cell rating-cell_left__info">BBB+</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Умеренный уровень геоэкономической эффективности и надежности, с положительными тенденциями.</p>
-							<p class="rating-info">Предприятие функционирует<br>
-								-	ведется освоение месторождения, <br>
-								-	умеренный уровень эконом. эффективности для поддержания кредитоспособности даже при условии появления рисков <br>
-								-	но не геологических, <br>
-								-	но не ценовых,<br>
-								-	но не общеэкономических. <br>
-								-	не достаточно стабильная сырьевая база (запасы сокращаются, срок отработки запасов достаточно близок). <br>
-								-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений существенные. <br>
-							</p>
-						</td>
-					</tr>
-					<tr class="rating-pitem" id="b-row2">
-						<th class="rating-cell rating-cell_left__info">BBB</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Умеренный уровень геоэкономической эффективности и надежности, с тенденциями.</p>
-							<p class="rating-info">Предприятие функционирует<br>
-								-	ведется освоение месторождения, <br>
-								-	умеренный уровень эконом. эффективности для поддержания кредитоспособности даже при условии появления рисков <br>
-								-	но не геологических, <br>
-								-	но не ценовых,<br>
-								-	но не общеэкономических. <br>
-								-	не достаточно стабильная сырьевая база (запасы сокращаются, срок отработки запасов достаточно близок). <br>
-								-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений существенные. <br>
-							</p>
-						</td>
-					</tr>
-					<tr class="rating-pitem" id="b-row3">
-						<th class="rating-cell rating-cell_left__info">BBB-</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Умеренный уровень геоэкономической эффективности и надежности с отрицательными тенденциями.</p>
-							<p class="rating-info">Предприятие функционирует<br>
-								-	ведется освоение месторождения, <br>
-								-	умеренный уровень эконом. эффективности для поддержания кредитоспособности даже при условии появления рисков <br>
-								-	но не геологических, <br>
-								-	но не ценовых,<br>
-								-	но не общеэкономических. <br>
-								-	не достаточно стабильная сырьевая база (запасы сокращаются, срок отработки запасов достаточно близок). <br>
-								-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений существенные. <br>
-							</p>
-						</td>
-					</tr>
-					<tr class="rating-pitem" id="b-row4">
-						<th class="rating-cell rating-cell_left__info">BB+</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Умеренный низкий уровень геоэкономической эффективности и надежности с отрицательными тенденциями.</p>
-							<p class="rating-info">Предприятие функционирует, но<br>
-								-	не ведется освоение месторождения (-ий) (стадия строительства),  <br>
-								-	прогнозируется эконом. эффективность для поддержания кредитоспособности даже при условии появления рисков  <br>
-								-	но не геологических, <br>
-								-	но не ценовых,<br>
-								-	но не общеэкономических. <br>
-								-	достаточная сырьевая база <br>
-								-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений существенные. <br>
-							</p>
-						</td>
-					</tr>
-					<tr class="rating-pitem" id="b-row5">
-						<th class="rating-cell rating-cell_left__info">BB</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Умеренный низкий уровень геоэкономической эффективности и надежности.</p>
-							<p class="rating-info">Предприятие функционирует, но<br>
-								-	не ведется освоение месторождения (-ий) (стадия строительства),  <br>
-								-	прогнозируется эконом. эффективность для поддержания кредитоспособности даже при условии появления рисков  <br>
-								-	но не геологических, <br>
-								-	но не ценовых,<br>
-								-	но не общеэкономических. <br>
-								-	достаточная сырьевая база <br>
-								-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений существенные. <br>
-							</p>
-						</td>
-					</tr>
-					<tr class="rating-pitem" id="b-row6">
-						<th class="rating-cell rating-cell_left__info">BB-</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Умеренный низкий уровень геоэкономической эффективности и надежности.</p>
-							<p class="rating-info">Предприятие функционирует, но<br>
-								-	не ведется освоение месторождения (-ий) (стадия строительства),  <br>
-								-	прогнозируется эконом. эффективность для поддержания кредитоспособности даже при условии появления рисков  <br>
-								-	но не геологических, <br>
-								-	но не ценовых,<br>
-								-	но не общеэкономических. <br>
-								-	достаточная сырьевая база <br>
-								-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений существенные. <br>
-							</p>
-						</td>
-					</tr>
-					<tr class="rating-pitem" id="b-row7">
-						<th class="rating-cell rating-cell_left__info">B+</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Низкий уровень геоэкономической эффективности и надежности.</p>
-							<p class="rating-info">Предприятие функционирует, но<br>
-								-	не ведется освоение месторождения (-ий) (стадия разведки или консервации месторождения),  <br>
-								-	прогнозируется высокая эконом. эффективность для поддержания кредитоспособности даже при условии появления рисков   <br>
-								-	геологических, <br>
-								-	но не ценовых. <br>
-								-	прогнозируется достаточная сырьевая база (относительно крупное месторождение) <br>
-								-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений высокие. <br>
-							</p>
-						</td>
-					</tr>
-					<tr class="rating-pitem" id="b-row8">
-						<th class="rating-cell rating-cell_left__info">B</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Низкий уровень геоэкономической эффективности и надежности.</p>
-							<p class="rating-info">Предприятие функционирует, но<br>
-								-	не ведется освоение месторождения (-ий) (стадия разведки или консервации месторождения),  <br>
-								-	прогнозируется умеренная эконом. эффективность для поддержания кредитоспособности даже при условии появления рисков   <br>
-								-	геологических, <br>
-								-	но не ценовых. <br>
-								-	прогнозируется достаточная сырьевая база (относительно крупное месторождение) <br>
-								-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений высокие. <br>
-							</p>
-						</td>
-					</tr>
-					<tr class="rating-pitem" id="b-row9">
-						<th class="rating-cell rating-cell_left__info">B-</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Низкий уровень геоэкономической эффективности и надежности.</p>
-							<p class="rating-info">Предприятие функционирует, но<br>
-								-	не ведется освоение месторождения (-ий) (стадия разведки или консервации месторождения),  <br>
-								-	прогнозируется ограниченная сырьевая база (относительно крупное месторождение) <br>
-								-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений высокие. <br>
-							</p>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-				
-			<table class="rating rating-tab" id="tab3">
-				<thead class="rating-body">
-					<tr class="rating-item" id="title">
-						<td class="rating-cell_select" colspan="2">
-							<a href="#c-row1"><div class="rating-cell_select__item">CCC</div></a>
-						</td>
-						<td class="rating-cell_select" colspan="2">
-							<a href="#c-row2"><div class="rating-cell_select__item">CC</div></a>
-						</td>
-						<td class="rating-cell_select" colspan="2">
-							<a href="#c-row3"><div class="rating-cell_select__item">C</div></a>
-						</td>
-						<td class="rating-cell_select rating-cell_select__item__last" colspan="4">
-							<a href="#c-seeall"><div class="rating-cell_select__item rating-cell_select__item__last">Показать все</div>
-						</td>
-					</tr>
-				</thead>
-				<tbody class="rating-body" id="c-seeall">
-					<tr class="rating-pitem" id="c-row1">
-						<th class="rating-cell rating-cell_left__info">CCC</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Низкий уровень геоэкономической эффективности и надежности.</p>
-							<p class="rating-info">Предприятие функционирует, но<br>
-								-	не ведется освоение месторождения (-ий) (стадия поисков месторождения), <br>
-								-	прогнозируется ограниченная сырьевая база (мелкое месторождение) <br>
-								-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений высокие.<br>
-								-	сроки действия разрешений на проведение работ близки к завершению.<br>
-							</p>
-						</td>
-					</tr>
-					<tr class="rating-pitem" id="c-row2">
-						<th class="rating-cell rating-cell_left__info">CC</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Низкий уровень геоэкономической эффективности и надежности.</p>
-							<p class="rating-info">Предприятие функционирует, но<br>
-								-	не ведется освоение месторождения (-ий) (стадия поисков месторождения), <br>
-								-	отсутствует достоверный прогноз по сырьевой базе<br>
-								-	сроки действия разрешений на проведение работ близки к завершению.<br>
-							</p>
-						</td>
-					</tr>
-					<tr class="rating-pitem" id="c-row3">
-						<th class="rating-cell rating-cell_left__info">C</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Низкий уровень геоэкономической эффективности и надежности.</p>
-							<p class="rating-info">Предприятие функционирует, но<br>
-								-	не ведется освоение месторождения (-ий) (стадия поисков месторождения), <br>
-								-	отсутствует достоверный прогноз по сырьевой базе<br>
-								-	сроки действия разрешений на проведение работ близки к завершению.<br>
-								-	завершаются сроки установленные для проведения основных работ (проектирование разведки, разведка, проектирование освоения, освоение).<br>
-							</p>
-						</td>
-					</tr>
+					<tbody class="rating-body" id="b-seeall">
+						<tr class="rating-pitem" id="b-row1">
+							<th class="rating-cell rating-cell_left__info">BBB+</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Умеренный уровень геоэкономической эффективности и надежности, с положительными тенденциями.</p>
+								<p class="rating-info">Предприятие функционирует<br>
+									-	ведется освоение месторождения, <br>
+									-	умеренный уровень эконом. эффективности для поддержания кредитоспособности даже при условии появления рисков <br>
+									-	но не геологических, <br>
+									-	но не ценовых,<br>
+									-	но не общеэкономических. <br>
+									-	не достаточно стабильная сырьевая база (запасы сокращаются, срок отработки запасов достаточно близок). <br>
+									-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений существенные. <br>
+								</p>
+							</td>
+						</tr>
+						<tr class="rating-pitem" id="b-row2">
+							<th class="rating-cell rating-cell_left__info">BBB</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Умеренный уровень геоэкономической эффективности и надежности, с тенденциями.</p>
+								<p class="rating-info">Предприятие функционирует<br>
+									-	ведется освоение месторождения, <br>
+									-	умеренный уровень эконом. эффективности для поддержания кредитоспособности даже при условии появления рисков <br>
+									-	но не геологических, <br>
+									-	но не ценовых,<br>
+									-	но не общеэкономических. <br>
+									-	не достаточно стабильная сырьевая база (запасы сокращаются, срок отработки запасов достаточно близок). <br>
+									-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений существенные. <br>
+								</p>
+							</td>
+						</tr>
+						<tr class="rating-pitem" id="b-row3">
+							<th class="rating-cell rating-cell_left__info">BBB-</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Умеренный уровень геоэкономической эффективности и надежности с отрицательными тенденциями.</p>
+								<p class="rating-info">Предприятие функционирует<br>
+									-	ведется освоение месторождения, <br>
+									-	умеренный уровень эконом. эффективности для поддержания кредитоспособности даже при условии появления рисков <br>
+									-	но не геологических, <br>
+									-	но не ценовых,<br>
+									-	но не общеэкономических. <br>
+									-	не достаточно стабильная сырьевая база (запасы сокращаются, срок отработки запасов достаточно близок). <br>
+									-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений существенные. <br>
+								</p>
+							</td>
+						</tr>
+						<tr class="rating-pitem" id="b-row4">
+							<th class="rating-cell rating-cell_left__info">BB+</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Умеренный низкий уровень геоэкономической эффективности и надежности с отрицательными тенденциями.</p>
+								<p class="rating-info">Предприятие функционирует, но<br>
+									-	не ведется освоение месторождения (-ий) (стадия строительства),  <br>
+									-	прогнозируется эконом. эффективность для поддержания кредитоспособности даже при условии появления рисков  <br>
+									-	но не геологических, <br>
+									-	но не ценовых,<br>
+									-	но не общеэкономических. <br>
+									-	достаточная сырьевая база <br>
+									-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений существенные. <br>
+								</p>
+							</td>
+						</tr>
+						<tr class="rating-pitem" id="b-row5">
+							<th class="rating-cell rating-cell_left__info">BB</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Умеренный низкий уровень геоэкономической эффективности и надежности.</p>
+								<p class="rating-info">Предприятие функционирует, но<br>
+									-	не ведется освоение месторождения (-ий) (стадия строительства),  <br>
+									-	прогнозируется эконом. эффективность для поддержания кредитоспособности даже при условии появления рисков  <br>
+									-	но не геологических, <br>
+									-	но не ценовых,<br>
+									-	но не общеэкономических. <br>
+									-	достаточная сырьевая база <br>
+									-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений существенные. <br>
+								</p>
+							</td>
+						</tr>
+						<tr class="rating-pitem" id="b-row6">
+							<th class="rating-cell rating-cell_left__info">BB-</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Умеренный низкий уровень геоэкономической эффективности и надежности.</p>
+								<p class="rating-info">Предприятие функционирует, но<br>
+									-	не ведется освоение месторождения (-ий) (стадия строительства),  <br>
+									-	прогнозируется эконом. эффективность для поддержания кредитоспособности даже при условии появления рисков  <br>
+									-	но не геологических, <br>
+									-	но не ценовых,<br>
+									-	но не общеэкономических. <br>
+									-	достаточная сырьевая база <br>
+									-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений существенные. <br>
+								</p>
+							</td>
+						</tr>
+						<tr class="rating-pitem" id="b-row7">
+							<th class="rating-cell rating-cell_left__info">B+</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Низкий уровень геоэкономической эффективности и надежности.</p>
+								<p class="rating-info">Предприятие функционирует, но<br>
+									-	не ведется освоение месторождения (-ий) (стадия разведки или консервации месторождения),  <br>
+									-	прогнозируется высокая эконом. эффективность для поддержания кредитоспособности даже при условии появления рисков   <br>
+									-	геологических, <br>
+									-	но не ценовых. <br>
+									-	прогнозируется достаточная сырьевая база (относительно крупное месторождение) <br>
+									-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений высокие. <br>
+								</p>
+							</td>
+						</tr>
+						<tr class="rating-pitem" id="b-row8">
+							<th class="rating-cell rating-cell_left__info">B</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Низкий уровень геоэкономической эффективности и надежности.</p>
+								<p class="rating-info">Предприятие функционирует, но<br>
+									-	не ведется освоение месторождения (-ий) (стадия разведки или консервации месторождения),  <br>
+									-	прогнозируется умеренная эконом. эффективность для поддержания кредитоспособности даже при условии появления рисков   <br>
+									-	геологических, <br>
+									-	но не ценовых. <br>
+									-	прогнозируется достаточная сырьевая база (относительно крупное месторождение) <br>
+									-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений высокие. <br>
+								</p>
+							</td>
+						</tr>
+						<tr class="rating-pitem" id="b-row9">
+							<th class="rating-cell rating-cell_left__info">B-</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Низкий уровень геоэкономической эффективности и надежности.</p>
+								<p class="rating-info">Предприятие функционирует, но<br>
+									-	не ведется освоение месторождения (-ий) (стадия разведки или консервации месторождения),  <br>
+									-	прогнозируется ограниченная сырьевая база (относительно крупное месторождение) <br>
+									-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений высокие. <br>
+								</p>
+							</td>
+						</tr>
 					</tbody>
-			</table>
+				</table>
+					
+				<table class="rating rating-tab" id="tab3">
+					<thead class="rating-body">
+						<tr class="rating-item" id="title">
+							<td class="rating-cell_select" colspan="2">
+								<a href="#c-row1"><div class="rating-cell_select__item">CCC</div></a>
+							</td>
+							<td class="rating-cell_select" colspan="2">
+								<a href="#c-row2"><div class="rating-cell_select__item">CC</div></a>
+							</td>
+							<td class="rating-cell_select" colspan="2">
+								<a href="#c-row3"><div class="rating-cell_select__item">C</div></a>
+							</td>
+							<td class="rating-cell_select rating-cell_select__item__last" colspan="4">
+								<a href="#c-seeall"><div class="rating-cell_select__item rating-cell_select__item__last">Показать все</div>
+							</td>
+						</tr>
+					</thead>
+					<tbody class="rating-body" id="c-seeall">
+						<tr class="rating-pitem" id="c-row1">
+							<th class="rating-cell rating-cell_left__info">CCC</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Низкий уровень геоэкономической эффективности и надежности.</p>
+								<p class="rating-info">Предприятие функционирует, но<br>
+									-	не ведется освоение месторождения (-ий) (стадия поисков месторождения), <br>
+									-	прогнозируется ограниченная сырьевая база (мелкое месторождение) <br>
+									-	риски которые заложенные в инвестирование по разведке и разработке новых месторождений высокие.<br>
+									-	сроки действия разрешений на проведение работ близки к завершению.<br>
+								</p>
+							</td>
+						</tr>
+						<tr class="rating-pitem" id="c-row2">
+							<th class="rating-cell rating-cell_left__info">CC</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Низкий уровень геоэкономической эффективности и надежности.</p>
+								<p class="rating-info">Предприятие функционирует, но<br>
+									-	не ведется освоение месторождения (-ий) (стадия поисков месторождения), <br>
+									-	отсутствует достоверный прогноз по сырьевой базе<br>
+									-	сроки действия разрешений на проведение работ близки к завершению.<br>
+								</p>
+							</td>
+						</tr>
+						<tr class="rating-pitem" id="c-row3">
+							<th class="rating-cell rating-cell_left__info">C</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Низкий уровень геоэкономической эффективности и надежности.</p>
+								<p class="rating-info">Предприятие функционирует, но<br>
+									-	не ведется освоение месторождения (-ий) (стадия поисков месторождения), <br>
+									-	отсутствует достоверный прогноз по сырьевой базе<br>
+									-	сроки действия разрешений на проведение работ близки к завершению.<br>
+									-	завершаются сроки установленные для проведения основных работ (проектирование разведки, разведка, проектирование освоения, освоение).<br>
+								</p>
+							</td>
+						</tr>
+						</tbody>
+				</table>
 
-			<table class="rating rating-tab" id="tab4">
-				<thead class="rating-body">
-					<tr class="rating-item" id="title">
-						<td class="rating-cell_select" colspan="2">
-							<a href="#d-row1"><div class="rating-cell_select__item">RD</div></a>
-						</td>
-						<td class="rating-cell_select" colspan="2">
-							<a href="#d-row2"><div class="rating-cell_select__item">SD</div></a>
-						</td>
-						<td class="rating-cell_select" colspan="2">
-							<a href="#d-row3"><div class="rating-cell_select__item">D</div></a>
-						</td>
-						<td class="rating-cell_select rating-cell_select__item__last" colspan="4">
-							<a href="#d-seeall"><div class="rating-cell_select__item rating-cell_select__item__last">Показать все</div>
-						</td>
-					</tr>
-				</thead>
-				<tbody class="rating-body" id="d-seeall">
-					<tr class="rating-pitem" id="d-row1">
-						<th class="rating-cell rating-cell_left__info">RD</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Низкий уровень геоэкономической эффективности и надежности.</p>
-							<p class="rating-info">Предприятие функционирует, но<br>
-								-	не ведется освоение месторождения (-ий) (стадия поисков месторождения), <br>
-								-	отсутствует достоверный прогноз по сырьевой базе <br>
-								-	сроки действия разрешений на проведение работ близки к завершению<br>
-								-	значительно просрочены  установленные   сроки основы работы (проектирование разведки, разведка, проектирование освоения, освоение)<br>
-							</p>
-						</td>
-					</tr>
-					<tr class="rating-pitem" id="d-row2">
-						<th class="rating-cell rating-cell_left__info">SD</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">Дефолтный рейтинг недропользования.</p>
-							<p class="rating-info">Предприятие не функционирует:<br>
-								-	не ведется освоение месторождения (-ий), не ведется геол.изучение<br>
-								-	отсутствует достоверный прогноз по сырьевой базе<br>
-								-	просрочены сроки предписаний надзорных органов, касающиеся выполнения основных условий пользования недрами<br>
-								-	просрочены сроки предписаний по результатам комиссий по рассмотрению вопросов о прекращении прав пользования недрами.<br>
-							</p>
-						</td>
-					</tr>
-					<tr class="rating-pitem" id="d-row3">
-						<th class="rating-cell rating-cell_left__info">D</th>
-						<td class="rating-cell_info rating-cell_right" colspan="9">
-							<p class="rating-title">У юридического лица или группы (холдинга) отозваны все лицензии, работы прекращены, имеется задолженность по рекультивации</p>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+				<table class="rating rating-tab" id="tab4">
+					<thead class="rating-body">
+						<tr class="rating-item" id="title">
+							<td class="rating-cell_select" colspan="2">
+								<a href="#d-row1"><div class="rating-cell_select__item">RD</div></a>
+							</td>
+							<td class="rating-cell_select" colspan="2">
+								<a href="#d-row2"><div class="rating-cell_select__item">SD</div></a>
+							</td>
+							<td class="rating-cell_select" colspan="2">
+								<a href="#d-row3"><div class="rating-cell_select__item">D</div></a>
+							</td>
+							<td class="rating-cell_select rating-cell_select__item__last" colspan="4">
+								<a href="#d-seeall"><div class="rating-cell_select__item rating-cell_select__item__last">Показать все</div>
+							</td>
+						</tr>
+					</thead>
+					<tbody class="rating-body" id="d-seeall">
+						<tr class="rating-pitem" id="d-row1">
+							<th class="rating-cell rating-cell_left__info">RD</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Низкий уровень геоэкономической эффективности и надежности.</p>
+								<p class="rating-info">Предприятие функционирует, но<br>
+									-	не ведется освоение месторождения (-ий) (стадия поисков месторождения), <br>
+									-	отсутствует достоверный прогноз по сырьевой базе <br>
+									-	сроки действия разрешений на проведение работ близки к завершению<br>
+									-	значительно просрочены  установленные   сроки основы работы (проектирование разведки, разведка, проектирование освоения, освоение)<br>
+								</p>
+							</td>
+						</tr>
+						<tr class="rating-pitem" id="d-row2">
+							<th class="rating-cell rating-cell_left__info">SD</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">Дефолтный рейтинг недропользования.</p>
+								<p class="rating-info">Предприятие не функционирует:<br>
+									-	не ведется освоение месторождения (-ий), не ведется геол.изучение<br>
+									-	отсутствует достоверный прогноз по сырьевой базе<br>
+									-	просрочены сроки предписаний надзорных органов, касающиеся выполнения основных условий пользования недрами<br>
+									-	просрочены сроки предписаний по результатам комиссий по рассмотрению вопросов о прекращении прав пользования недрами.<br>
+								</p>
+							</td>
+						</tr>
+						<tr class="rating-pitem" id="d-row3">
+							<th class="rating-cell rating-cell_left__info">D</th>
+							<td class="rating-cell_info rating-cell_right" colspan="9">
+								<p class="rating-title">У юридического лица или группы (холдинга) отозваны все лицензии, работы прекращены, имеется задолженность по рекультивации</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 
-			<div class="modal-window" id='modal1'>
+
+				<div class="modal-window" id='modal1'>
 				<div class="modal-window_title">Выберите рейтинг месторождения:</div>
 				<div class="modal-window_content">
 					<div class="checkbox">
