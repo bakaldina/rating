@@ -177,14 +177,13 @@ a.active .rating-cell_select__item::after {
 } 
 .rating-cell_select__item__last {
     border: none;
-    width: 125px;
 }
 .rating-cell_info {
     background-color: #f0f8fa;
-    width: 760px;
 }
 .rating-cell_left__info {
     background-color: #f0f8fa;
+    width: 10%;
 }
 .rating-info {
     margin-right: 90px;
