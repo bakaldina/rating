@@ -1,6 +1,19 @@
 *{
     box-sizing: border-box;
 }
+/* pt-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/pt-sans-v8-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local('PT Sans'), local('PTSans-Regular'),
+       url('fonts/pt-sans-v8-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/pt-sans-v8-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/pt-sans-v8-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/pt-sans-v8-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/pt-sans-v8-latin_cyrillic-regular.svg#PTSans') format('svg'); /* Legacy iOS */
+}
 body {
     width: 100%;
     margin: 0;
@@ -96,7 +109,7 @@ body {
     max-width: 830px;
     margin: 0 auto;
     margin-bottom: 100px;
-    padding: 0 15px;
+    padding: 0px 17px;
 }
 .main h1 {
     color: #9BA6B3;
@@ -334,7 +347,7 @@ input[type=radio] {
 }
 .wrap {
     width: 100%;
-    max-width: 830px;
+    max-width: 850px;
 }
 
 .tableall-wrap{
