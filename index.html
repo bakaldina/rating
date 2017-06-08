@@ -98,7 +98,7 @@
 				<table class="rating">
 					<tbody class="rating-body">
 						<tr class="rating-item">
-							<th class="rating-cell rating-cell_left" width="45%">Рейтинг</th>
+							<th class="rating-cell rating-cell_left" width="35%">Рейтинг</th>
 							<td class="rating-cell rating-cell_right">
 								<p class="rating-title">Описание состояния предприятия согласно методологии «Недра-эксперт»</p>
 							</td>
@@ -576,12 +576,16 @@
 				$container3 = $D.querySelector('.container-3'),
 				$button4    = $D.querySelector('.button-4'),
 				$container4 = $D.querySelector('.container-4');
-		
+
+			$container1.style.display = 'block';
+			$button1.style.color = '#c2d0e1';
+
 			$button1.addEventListener('click', function(e){
 			$container1.style.display = 'block';
 			$container2.style.display = 'none';
 			$container3.style.display = 'none';
 			$container4.style.display = 'none';
+			$button1.style.color = '#c2d0e1';
 			});
 		
 			$button2.addEventListener('click', function(e){
@@ -589,18 +593,21 @@
 			$container3.style.display = 'none';
 			$container4.style.display = 'none';
 			$container2.style.display ='block';
+			$button1.style.color = '#fff';
 			});
 			$button3.addEventListener('click', function(e){
 			$container1.style.display ='none';
 			$container2.style.display = 'none';
 			$container4.style.display ='none';
 			$container3.style.display ='block';
+			$button1.style.color = '#fff';
 			});
 			$button4.addEventListener('click', function(e){
 			$container1.style.display ='none';
 			$container2.style.display = 'none';
 			$container3.style.display ='none';
 			$container4.style.display ='block';
+			$button1.style.color = '#fff';
 			});
 		})(document);
 
