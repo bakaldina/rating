@@ -26,12 +26,8 @@ body {
 }
 
 .header_menu img{
-<<<<<<< HEAD
     width: 100%;
     vertical-align: bottom;
-=======
-    width: 100%
->>>>>>> 996bfb99afa631cad1ada96fde0b81633537332c
 }
 
 .rating_menu {
@@ -117,11 +113,6 @@ table {
     border-collapse: separate;
 }
 table.rating {
-<<<<<<< HEAD
-=======
-    width: 830px;
-    min-width: 100%;
->>>>>>> 996bfb99afa631cad1ada96fde0b81633537332c
     table-layout: fixed;
     margin: auto;
     line-height: 25px;
@@ -195,10 +186,7 @@ a.active .rating-cell_select__item::after {
 }
 .rating-cell_left__info {
     background-color: #f0f8fa;
-<<<<<<< HEAD
     width: 10%;
-=======
->>>>>>> 996bfb99afa631cad1ada96fde0b81633537332c
 }
 .rating-info {
     margin-right: 90px;
