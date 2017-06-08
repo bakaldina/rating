@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Рейтинги</title>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="style.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+
 </head>
 <body>
 	<div class="container-fluid">
@@ -618,18 +619,34 @@
 				modal.style.display = '';
 		}
 		
-		function showTab(){
-			var article = document.querySelector('.checkbox input:checked'),
-				tabs = document.querySelectorAll('.rating-tab'),			
-				data = article.dataset;
-				
-			for(var i=0;i<tabs.length;i++){
-				tabs[i].classList="rating rating-tab";
-			}
-						
-			document.getElementById(data.tab).classList = "rating rating-tab active";
-			document.querySelector('.modal-window').style.display = 'none';
+		// function showTab(){
+		// 	var article = document.querySelector('.checkbox input:checked'),
+		// 		tabs = document.querySelectorAll('.rating-tab'),      
+		// 		data = article.dataset;
+			
+		// 	for(var i=0;i<tabs.length;i++){
+		// 		tabs[i].classList.remove("active");
+		// 	}
+			
+		// 	document.getElementById(data.tab).classList.add('active');
+		// 	document.querySelector('.modal-window').style.display = 'none';
+		// 	}
+ 
+			function showTab(){
+		var article = document.querySelector('.checkbox input:checked'),
+			tabs = document.querySelectorAll('.rating-tab'),      
+			data = article.dataset;
+		
+		for(var i=0;i<tabs.length;i++){
+			tabs[i].classList.remove("active");
 		}
+		
+		document.getElementById(data.tab).classList.add('active');
+		document.querySelector('.modal-window').style.display = 'none';
+		}
+	
+
+
 		
 		function applyFilter(){
 			var rows = document.querySelectorAll('.rating-pitem'),
